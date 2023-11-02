@@ -1,0 +1,19 @@
+.name-main {
+  font-family: "Great Vibes", cursive;
+  color: #f23b43;
+  font-weight: 500;
+  font-size: 35px;
+}
+.name-info {
+  color: #818492;
+}
+.section-button {
+  background-color: red;
+  width: 36px;
+  height: 36px;
+  color: white;
+}
+.section img {
+  width: 430px;
+  height: 430px;
+}

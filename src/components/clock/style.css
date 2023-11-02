@@ -1,0 +1,21 @@
+.clock {
+  width: 176px;
+  height: 176px;
+  border-radius: 100%;
+  font-size: 3rem;
+  color: #f23b43;
+  border: 3px solid;
+}
+.clock .overlay {
+  opacity: 0.6;
+  background-color: white;
+  border-radius: 100%;
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+}
+.clock .time {
+  position: absolute;
+  z-index: 999;
+}

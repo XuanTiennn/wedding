@@ -1,0 +1,9 @@
+.header ul li:hover {
+  color: #f23b43;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header ul li {
+  font-size: 14px;
+  white-space: nowrap;
+}
