@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+li{
+  list-style: none;
+}
+
+/* Thay đổi màu sắc của thanh scroll */
+::-webkit-scrollbar {
+  background-color: #CCCCCC;
+}
+
+/* Thay đổi màu sắc của thanh trượt */
+::-webkit-scrollbar-thumb {
+  background-color: #FF4061;
+}
+
+/* Thay đổi kích thước của thanh scroll */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Thay đổi vị trí của thanh scroll */
+::-webkit-scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
