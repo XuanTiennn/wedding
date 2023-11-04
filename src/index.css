@@ -15,6 +15,9 @@ code {
 .size-30px {
   font-size: 30px;
 }
+.size-35px {
+  font-size: 35px;
+}
 .button-hover:hover {
   background-color: #f23b43;
   transition: 0.3s;

@@ -7,7 +7,7 @@ function Header(props) {
   return (
     <div className="header grid flex align-items-center" style={{boxShadow:"0px 0px 35.77px 13.23px rgba(202, 202, 220, 0.16)"}}>
       <div className="col-6">
-        <span>T &3 QA</span>
+        <span>T ❤️ QA</span>
       </div>
       <div className="col-6">
         <ul className="flex">
