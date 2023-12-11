@@ -19,9 +19,9 @@ function SaveTheDate(props) {
   return (
     <div className="save-the-date">
       <h2 className="font-family text-white font-medium	text-6xl">Save The Date</h2>
-      <h4 className="text-white size-30px">-- 22 October 2023 --</h4>
+      <h4 className="text-white size-30px">-- January 1, 2024 --</h4>
       <div className="block-clock flex justify-content-evenly">
-        <Clock time={11} />
+        <Clock time={new Date(1/1/2024)-new Date()} />
         <Clock time={30} />
         <Clock time={22} />
         <Clock time={seconds} />

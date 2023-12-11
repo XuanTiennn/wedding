@@ -12,7 +12,7 @@ function Section(props) {
   const { urlImg, name, role } = props;
   return (
     <div className={props.className}>
-      <img src={urlImg} />
+      <img src={urlImg}  alt={""}/>
       <div className="flex flex-column align-items-center justify-content-center">
         <h2 className="name-main">{name}</h2>
         <span className="name-info">{role}</span>
