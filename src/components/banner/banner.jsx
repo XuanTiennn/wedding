@@ -12,13 +12,13 @@ export default function Banner() {
     },
     {
       itemImageSrc: "banner2.JPG",
-      thumbnailImageSrc: "banner2.JPG",
+      thumbnailImageSrc: "anhbanner1.JPG",
 
       title: "Title 14",
     },
     {
       itemImageSrc: "banner3.JPG",
-      thumbnailImageSrc: "banner3.JPG",
+      thumbnailImageSrc: "anhbanner1.JPG",
       alt: "Description for Image 15",
       title: "Title 15",
     },
@@ -29,21 +29,25 @@ export default function Banner() {
   };
 
   const thumbnailTemplate = (item) => {
-    return <img src={`${process.env.PUBLIC_URL}/${item.itemImageSrc}`} style={{ display: "block" }} />;
+    return <img src={`${process.env.PUBLIC_URL}/${item.thumbnailImageSrc}`} style={{ display: "block" }} />;
   };
   const responsiveOptions = [
     {
-      breakpoint: "991px",
-      numVisible: 4,
+      breakpoint: '1024px',
+      numVisible: 5
     },
     {
-      breakpoint: "767px",
-      numVisible: 3,
+      breakpoint: '960px',
+      numVisible: 4
     },
     {
-      breakpoint: "575px",
-      numVisible: 1,
+      breakpoint: '768px',
+      numVisible: 3
     },
+    {
+      breakpoint: '560px',
+      numVisible: 1
+    }
   ];
   return (
     <div className="galleria relative">
