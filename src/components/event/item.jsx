@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button } from "primereact/button";
+import {Button} from "primereact/button";
 
 Item.propTypes = {
   urlImg: PropTypes.string,

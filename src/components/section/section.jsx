@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Button from "../button-social/button";
 import "./style.css";
+
 Section.propTypes = {
   urlImg: PropTypes.string,
   name: PropTypes.string,
@@ -12,7 +12,7 @@ function Section(props) {
   const { urlImg, name, role } = props;
   return (
     <div className={props.className}>
-      <img src={urlImg}  alt={""}/>
+      <img src={`${process.env.PUBLIC_URL}/${urlImg}`} alt="Description" />
       <div className="flex flex-column align-items-center justify-content-center">
         <h2 className="name-main">{name}</h2>
         <span className="name-info">{role}</span>
