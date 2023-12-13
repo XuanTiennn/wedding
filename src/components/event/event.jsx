@@ -13,7 +13,7 @@ function Event(props) {
           className="item-event mx-2"
           urlImg={`${process.env.PUBLIC_URL}/damcuoi1.JPG`}
           title="BỮA TIỆC THÂN MẬT NHÀ GÁI"
-          address="Yên Hưng, Quảng Văn, Quảng Xương, Thanh Hoá"
+          address="Yên Hưng, Quảng Văn, Q.Xương, Thanh Hoá"
           time="06:30 AM 01/01/2024"
         />
         <Item
