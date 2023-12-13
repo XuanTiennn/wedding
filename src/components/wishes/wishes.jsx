@@ -5,7 +5,6 @@ Wishes.propTypes = {};
 
 function Wishes(props) {
     const backgroundUrl = `${process.env.PUBLIC_URL}/bg2.JPG`;
-    console.log("backgroundUrl", backgroundUrl)
     const style = {
         background: `url(${backgroundUrl}) center center/cover no-repeat local`,
         padding: '120px 0',

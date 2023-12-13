@@ -14,7 +14,6 @@ function SaveTheDate(props) {
     minutes: 59
   }
   const backgroundUrl = `${process.env.PUBLIC_URL}/bg1.JPG`;
-  console.log("backgroundUrl", backgroundUrl)
   const style = {
     background: `url(${backgroundUrl}) center center/cover no-repeat local`,
     padding: '120px 0',

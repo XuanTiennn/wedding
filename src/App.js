@@ -11,14 +11,17 @@ import {Button} from "primereact/button";
 import SaveTheDate from "./components/save-the-date";
 import Event from "./components/event/event";
 import Wishes from "./components/wishes/wishes";
-import {useRef} from "react";
+import {useEffect, useRef} from "react";
+import ScrollAndPlayAudio from "./components/audio/ScrollAndPlayAudio";
 
 function App() {
-  const ref = useRef();
+  const ref = useRef(null);
   // useEffect(() => {
-  //   if (ref.current) ref.current.play();
+  //   if (ref.current) {
+  //       ref.current.play();
+  //   }
   // }, []);
-  console.log(ref.current);
+  // console.log(ref.current);
   return (
     <div className="App">
       <Banner />
@@ -45,12 +48,7 @@ function App() {
       <SaveTheDate />
       <Event />
       <Wishes />
-      <audio
-        controls
-        ref={ref}
-        src="https://cdn.biihappy.com/ziiweb/wedding-musics/TaLaCuaNhau-DongNhiOngCaoThang.mp3"
-        autoPlay
-      />
+        <ScrollAndPlayAudio />
     </div>
   );
 }
