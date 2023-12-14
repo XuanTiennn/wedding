@@ -33,12 +33,20 @@
   top: 0;
   white-space: nowrap;
 }
-.galleria .slice2 {
-  background-image: url("https://quangdungwedding.iwedding.info/templates/template4/images/slider/slide-bottom-arrow.png")
-    center center/cover no-repeat local;
-}
 .galleria .slice1,
 .galleria .slice2 {
   position: absolute;
   z-index: 999;
+}
+
+@media screen and (max-width: 600px) {
+  .galleria .text-name {
+    font-size: 45px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  .galleria .content i {
+    font-size: 390px;
+  }
 }

@@ -12,7 +12,7 @@ function Section(props) {
   const { urlImg, name, role } = props;
   return (
     <div className={props.className}>
-      <img style={{width:"100%", height:"250px"}} src={`${process.env.PUBLIC_URL}/${urlImg}`} alt="Description" />
+      <img src={`${process.env.PUBLIC_URL}/${urlImg}`} alt="Description" />
       <div className="flex flex-column align-items-center justify-content-center">
         <h2 className="name-main">{name}</h2>
         <span className="name-info">{role}</span>
