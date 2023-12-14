@@ -15,7 +15,7 @@ function Item(props) {
   return (
     <div className={className}>
       <img className="w-full" src={urlImg} />
-      <p className="font-semibold	">{title}</p>
+      <p className="font-semibold">{title}</p>
       <p className="text-sm	">{address}</p>
       <p className="text-sm	">{time}</p>
       <Button className="w-9 button-hover text-333" rounded outlined label="Thêm vào lịch" icon="pi pi-calendar-plus" />

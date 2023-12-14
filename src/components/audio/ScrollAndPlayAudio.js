@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 const ScrollAndPlayAudio = () => {
     const [isScrolled, setIsScrolled] = useState(false);
-
+    const [isPlaying, setIsPlaying] = useState(false);
+    const audio = 'https://cdn.biihappy.com/ziiweb/wedding-musics/TaLaCuaNhau-DongNhiOngCaoThang.mp3';
     useEffect(() => {
         const handleScroll = () => {
             if (!isScrolled && window.scrollY > 200) {
@@ -22,13 +23,21 @@ const ScrollAndPlayAudio = () => {
 
     const onPlay = () => {
         // Phát nhạc audio (thay đổi đường dẫn phù hợp)
-        const audio = new Audio('https://cdn.biihappy.com/ziiweb/wedding-musics/TaLaCuaNhau-DongNhiOngCaoThang.mp3');
-        audio.play();
+        const audioElement = document.getElementById('audio');
+        if (isPlaying) {
+            audioElement.pause()
+        } else {
+            audioElement.play()
+        }
+        setIsPlaying(!isPlaying);
     }
     return (
-        <div style={styles.container}>
-            <div style={styles.playButton} onClick={onPlay}>
-                ▶️ Play
+        <div>
+            <audio id="audio" src={audio}/>
+            <div style={styles.container}>
+                <div style={styles.playButton} onClick={onPlay}>
+                    {isPlaying ? '⏸ Pause' : '▶️ Play'}
+                </div>
             </div>
         </div>
     );
